@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "menu_simples.h"
-#include "produto.h"
-#include "simples.h"
+#include "../../produto/produto.h"
+#include "../simples.h"
 
 void menu_simples(No **lista)
 {

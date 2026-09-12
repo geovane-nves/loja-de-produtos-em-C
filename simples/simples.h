@@ -1,7 +1,7 @@
 #ifndef SIMPLES_H
 #define SIMPLES_H
 
-#include "produto.h"
+#include "../produto/produto.h"
 
 typedef struct No{
     Produto produto;
