@@ -2,9 +2,14 @@
 #include "./simples/simples.h"
 #include "./simples/menu/menu_simples.h"
 
+// Importação da Lista Circular Simplesmente encadeada
+#include "./circular/circular.h"
+#include "./circular/menu/menu_circular.h"
+
 int main()
 {
     No *lista = NULL;
+    No_circular *cabeca_circular = NULL;
     int opcao;
 
     do
@@ -29,7 +34,7 @@ int main()
             break;
 
         case 3:
-            printf("Menu da lista circular ainda nao implementado.\n");
+            menu_circular(&cabeca_circular);
             break;
 
         case 0:
