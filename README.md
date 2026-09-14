@@ -58,18 +58,22 @@ Projeto desenvolvido em C para gerenciar produtos de uma loja de conveniência u
 O programa possui um menu interativo para organizar produtos em diferentes áreas do estoque:
 
 - **Perecíveis:** lista simplesmente encadeada.
-- **Não perecíveis:** lista duplamente encadeada, prevista no trabalho, mas ainda não implementada neste repositório.
+- **Não perecíveis:** lista duplamente encadeada.
 - **Promoções:** lista circular simplesmente encadeada.
 
 Cada produto possui ID, nome, quantidade, preço e validade. O ID é gerado automaticamente quando o produto é criado.
 
 ### 🌟 Destaques
 
-- 🧾 Cadastro de produtos com geração automática de ID.
-- 🔗 Operações em listas simples e circulares.
-- 🔎 Busca de produtos por parte do nome.
-- 📊 Contagem e atualização de quantidades.
-- 🧹 Liberação da memória ao esvaziar a lista.
+🧾 Cadastro de produtos com geração automática de ID.
+🔗 Utilização de listas simplesmente, duplamente e circularmente encadeadas.
+➕ Inserção de produtos no início e no fim das listas.
+❌ Remoção de produtos no início, no fim e por ID.
+🔎 Busca de produtos por parte do nome.
+📊 Contagem e atualização de quantidades.
+🔄 Exibição em ordem reversa na lista duplamente encadeada.
+🧹 Liberação da memória ao esvaziar as listas.
+⚠️ Tratamento de lista vazia, ID inexistente, falha de alocação e opções de menu inválidas.
 
 ## 🛠️ Requisitos
 
@@ -129,6 +133,12 @@ Na lista circular, estão disponíveis inserção no início ou no fim, remoçã
 │   └── menu/
 │       ├── menu_simples.c
 │       └── menu_simples.h
+├── dupla/
+│   ├── dupla.c
+│   ├── dupla.h
+│   └── menu/
+│       ├── menu_dupla.c
+│       └── menu_dupla.h
 ├── circular/
 │   ├── circular.c
 │   ├── circular.h
@@ -157,8 +167,10 @@ O documento do trabalho solicita:
 ## 🧭 Estado atual e pendências
 
 - A lista simplesmente encadeada está implementada para produtos perecíveis.
+- A lista duplamente encadeada está implementada para produtos não perecíveis.
 - A lista circular está implementada para produtos em promoção.
-- A opção de produtos não perecíveis ainda exibe uma mensagem informando que o menu não foi implementado.
-- A exibição reversa da lista dupla ainda não está disponível porque o módulo da lista dupla não existe no projeto.
-- É necessário validar a compilação a partir de uma árvore limpa com `make clean && make` antes da entrega, pois arquivos `.o` antigos podem causar erros de linkedição após alterações nos nomes das funções.
-- Os nomes dos integrantes devem ser preenchidos neste arquivo antes da entrega.
+- O menu principal permite acessar os três tipos de lista.
+- A lista duplamente encadeada possui navegação normal e reversa por meio dos ponteiros prox e ant.
+- Os módulos das listas estão separados em suas respectivas pastas.
+- O projeto utiliza alocação dinâmica de memória para os nós das listas.
+- O README.md acompanha a estrutura atual do projeto.
