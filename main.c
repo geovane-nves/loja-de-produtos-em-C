@@ -6,10 +6,15 @@
 #include "./circular/circular.h"
 #include "./circular/menu/menu_circular.h"
 
+// Importação da Lista Duplamente Encadeada
+#include "./dupla/dupla.h"
+#include "./dupla/menu/menu_dupla.h"
+
 int main()
 {
     No *lista = NULL;
     No_circular *cabeca_circular = NULL;
+    No_duplo *lista_dupla = NULL;
     int opcao;
 
     do
@@ -30,7 +35,7 @@ int main()
             break;
 
         case 2:
-            printf("Menu da lista dupla ainda nao implementado.\n");
+            menu_dupla(&lista_dupla);
             break;
 
         case 3:
