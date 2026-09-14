@@ -53,6 +53,7 @@ int main()
     } while (opcao != 0);
 
     esvaziar(&lista);
+    esvaziar_dupla(&lista_dupla);
 
     return 0;
 }
