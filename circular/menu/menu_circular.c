@@ -39,7 +39,6 @@ void menu_circular(No_circular **lista)
             switch (opcao)
             {
             case 1:
-                // Quando terminar fazer essas funções dentro do funcionalidades
                 printf("Nome: ");
                 scanf(" %49[^\n]", nome);
 
@@ -56,7 +55,6 @@ void menu_circular(No_circular **lista)
 
                 if (produto != NULL)
                 {
-                    // Usando a Flag 1 para inserir na cabeça
                     inserir_circular(*produto, lista, 1);
                     free(produto);
                 }
@@ -115,44 +113,38 @@ void menu_circular(No_circular **lista)
 
                 break;
 
-                case 6:
+            case 6:
 
-                    listar_circular(*lista);
+                listar_circular(*lista);
 
-                    break;
+                break;
 
-                case 7:
+            case 7:
 
-                    printf("Digite o nome para buscar: ");
-                    scanf(" %49[^\n]", nome);
+                printf("Digite o nome para buscar: ");
+                scanf(" %49[^\n]", nome);
 
-                    buscarNome_circular(*lista, nome);
+                buscarNome_circular(*lista, nome);
 
-                    break;
+                break;
 
-                case 8:
+            case 8:
 
-                    printf("Digite o ID: ");
-                    scanf("%d", &id);
+                printf("Digite o ID: ");
+                scanf("%d", &id);
 
-                    printf("Digite a nova quantidade: ");
-                    scanf("%d", &nova_quantidade);
+                printf("Digite a nova quantidade: ");
+                scanf("%d", &nova_quantidade);
 
-                    atualizarQuantidade_circular(*lista, id, nova_quantidade);
+                atualizarQuantidade_circular(*lista, id, nova_quantidade);
 
-                    break;
+                break;
 
-                case 9:
+            case 9:
 
-                    printf("Quantidade de produtos: %d\n", contar_circular(*lista));
+                printf("Quantidade de produtos: %d\n", contar_circular(*lista));
 
-                    break;
-
-                // case 10:
-
-                //     esvaziar(lista);
-
-                //     break;
+                break;
 
             case 0:
 

@@ -2,11 +2,9 @@
 #include "./simples/simples.h"
 #include "./simples/menu/menu_simples.h"
 
-// Importação da Lista Circular Simplesmente encadeada
 #include "./circular/circular.h"
 #include "./circular/menu/menu_circular.h"
 
-// Importação da Lista Duplamente Encadeada
 #include "./dupla/dupla.h"
 #include "./dupla/menu/menu_dupla.h"
 
